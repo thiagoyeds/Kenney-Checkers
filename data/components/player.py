@@ -13,7 +13,7 @@ class Player(pg.sprite.Sprite):
         self.num_player = num_player
         self.margin = margin
         self.number_divide = number_divide
-        self.playing = 'No capture'
+        self.playing = 'No play'
         for linha in sprites:
             for coluna in range(8):
                 if (not linha % 2 and not coluna % 2) or (linha % 2 and coluna % 2):

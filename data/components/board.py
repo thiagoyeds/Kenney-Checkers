@@ -61,11 +61,11 @@ class Board(pg.sprite.Sprite):
                 if len(self.hero_select.capture(enemy, self.heros)):
                     self.heros_capture_required.add(self.hero_select)
 
-    def check_hero(self):
+    def check_hero(self, hero_select):
         if not len(self.heros_capture_required):
             return True
         else:
-            x, y = self.hero_select.get_coord()
+            x, y = hero_select.get_coord()
             for hero in self.heros_capture_required:
                 if hero.equal_coord([x, y]):
                     return True
@@ -129,8 +129,8 @@ class Board(pg.sprite.Sprite):
             hero = self.player_two.search_hero(pos)
             enemy = self.player_one.get_heros()
         if hero[0]:
-            self.hero_select = hero[1]
-            if self.check_hero():
+            if self.check_hero(hero[1]):
+                self.hero_select = hero[1]
                 self.playing = True
                 self.coord_hero_select = self.hero_select.get_coord()
                 self.heros_move = self.hero_select.move(self.heros, enemy, turn)

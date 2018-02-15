@@ -1,4 +1,4 @@
-# **kENNEY CHECKERS PROJECT**
+# **KENNEY CHECKERS PROJECT**
 ## 1. *Principal objective this project*
 This is a mini-project of the course of Computer Science (UFCG) that use the Python graphical library (PyGame) with purpose of create a game of Damas.
 ## 2. *About Kenney damas*
@@ -9,7 +9,7 @@ Brazilian Checkers is played in an 8x8 game board and 24 pieces in total (12/12)
 * The king can move by across the diagonals it is contained
 * Pieces make captures and move on diagonal
 * Capture is obrigatory
-* Capture most number of enemy pieces is obrigatory (Majority law)
+* Capture most number of enemy pieces is obrigatory (Majority law) **INCOMPLETE**
 ## 4. *Tools used in create of game*
 I used some assets for customize my game having like reference the following webpages:
 * ### Kenney Official Site (sprites sheets)
