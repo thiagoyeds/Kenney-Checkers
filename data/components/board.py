@@ -46,7 +46,7 @@ class Board(pg.sprite.Sprite):
     def check_capture_required(self, turn):
         if turn == 1:
             enemy = self.player_two.get_heros()
-            if self.hero_select == None:
+            if self.hero_select == None or self.player_one.get_playing() == 'No play':
                 self.heros_capture_required = self.player_one.check_capture_heros(enemy, self.heros)
             else:
                 self.heros_capture_required.empty()
@@ -54,7 +54,7 @@ class Board(pg.sprite.Sprite):
                     self.heros_capture_required.add(self.hero_select)
         else:
             enemy = self.player_one.get_heros()
-            if self.hero_select == None:
+            if self.hero_select == None or self.player_two.get_playing() == 'No play':
                 self.heros_capture_required = self.player_two.check_capture_heros(enemy, self.heros)
             else:
                 self.heros_capture_required.empty()
@@ -135,6 +135,7 @@ class Board(pg.sprite.Sprite):
                 self.coord_hero_select = self.hero_select.get_coord()
                 self.heros_move = self.hero_select.move(self.heros, enemy, turn)
             else:
+                self.playing = False
                 self.heros_move.empty()
         else:
             self.playing = False
