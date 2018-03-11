@@ -1,4 +1,5 @@
 # **KENNEY CHECKERS PROJECT**
+![Kenney Image](references/kenney_image.png)
 ## 1. *Principal objective this project*
 This is a mini-project of the course of Computer Science (UFCG) that use the Python graphical library (PyGame) with purpose of create a game of Damas.
 ## 2. *About Kenney damas*
@@ -18,7 +19,9 @@ I used some assets for customize my game having like reference the following web
 ![Kenney YouTube Channel](references/kenney_channel.png)
 * ### Python Graphics Library
 ![Pygame Docs](references/python_docs.png)
-## 5. *References*
+## 5. *Youtube Link (Video)*
+* https://www.youtube.com/watch?v=u6LvBPbR_tU
+## 6. *References*
 * https://kenney.nl/
 * https://www.youtube.com/user/Morku
 * https://www.pygame.org/docs/
